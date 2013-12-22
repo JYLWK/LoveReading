@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<TextView
+	    android:id="@+id/t1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="插到"></TextView>
+	
+	<EditText
+	    android:id="@+id/newmark"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/t1"></EditText>
+	
+	<TextView
+	    android:id="@+id/t2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/newmark"
+	    android:text="这里"></TextView>
+	
+	<Button
+	    android:id="@+id/sss1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="提交"
+	    android:layout_toRightOf="@+id/t2"></Button>
+</RelativeLayout>

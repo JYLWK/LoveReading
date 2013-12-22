@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+	
+ <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+    
+ 
+ 	 <ImageButton
+        android:id="@+id/premonth"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spinner"
+        android:src="@drawable/pre"></ImageButton>
+ 	<TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_toRightOf="@+id/premonth"></TextView>"
+    
+    <ImageButton
+        android:id="@+id/nextmonth"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/date"
+        android:layout_below="@+id/spinner"
+        android:src="@drawable/next"></ImageButton>"
+    
+   	<GridView      
+    	android:id="@+id/weekday"      
+    	android:layout_width="fill_parent"       
+    	android:layout_height="wrap_content"      
+    	android:numColumns="7"      
+    	android:verticalSpacing="10dp"      
+    	android:horizontalSpacing="0dp"      
+    	android:columnWidth="90dp"      
+    	android:stretchMode="columnWidth"      
+    	android:gravity="center"	
+    	android:layout_below="@+id/premonth"
+    	></GridView>	
+   		
+   	   	<GridView      
+    	android:id="@+id/calendar"      
+    	android:layout_width="fill_parent"       
+    	android:layout_height="fill_parent"      
+    	android:numColumns="7"      
+    	android:verticalSpacing="1dp"      
+    	android:horizontalSpacing="1dp"      
+    	android:columnWidth="90dp"      
+    	android:stretchMode="columnWidth"      
+    	android:gravity="center"	
+    	android:layout_below="@+id/weekday"
+    	android:background="#DCDCDC"></GridView>
+</RelativeLayout>
